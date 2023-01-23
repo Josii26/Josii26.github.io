@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bree+Serif&family=Cantata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bree+Serif&family=Cantata+One&family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Bree+Serif&family=Cantata+One&family=Kanit&family=Merriweather+Sans&family=PT+Serif:wght@700&family=Roboto+Mono:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+}    
+
+   /* .navbar{
+    height: 90px;
+   } */
+
+    .navbar-toggler{
+        color: rgb(251, 255, 0);
+    }
+
+    .navbar-collapse{
+        letter-spacing: 1px;
+        font-family: 'Kanit', sans-serif;
+    }
+
+    .navbar-nav li a{
+        margin-left: 80px;
+        letter-spacing: 5px;
+        color: rgb(255, 255, 0);
+        font-family: 'Kanit', sans-serif;
+    }
+
+    .navbar-nav li a:hover{
+        color: rgb(243, 243, 236);
+    }
+
+    .nav-item{
+        margin-left: 10px;
+    }
+
+    .nav-link:hover{
+        border-radius: 50px;
+        background-color: rgb(218, 218, 30);
+    }   
+    
+    .content{
+        height: 100vh;
+        background: no-repeat;
+        background-size: cover;
+        background-image: url(/pictures/3.jpg);
+        background-position: 100%;
+    }
+
+    .content{
+        padding-top: 200px;
+        margin-left: 150px;
+        color: rgb(241, 241, 5);
+    }
+    
+    .content h1{
+        margin-left: 40px;
+        color: rgb(255, 231, 11);
+        font-size: 70px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        font-family: 'Bangers', cursive;
+
+    }
+
+    .content h2{
+        margin-left: 130px;
+        color: rgb(255, 230, 0);
+        font-size: 100px;
+        font-weight: bold;
+        letter-spacing: 10px;
+        font-family: 'Bangers', cursive;
+    }
+
+    .content p{
+        color: rgb(255, 255, 255);
+        font-family: 'Cantata One', serif;
+        font-size: 20px;
+        margin-left: 50px
+    }
+    .orderbutton{
+        margin-left: 100px;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 20px;
+        transition: transform 0.4 ease;
+        border-radius: 15px;
+        width: 100px;
+        background-color: yellow;
+    }
+
+    .title1{
+        margin-top: 60px;
+        padding: 20px;
+        font-family: 'Bangers', cursive;
+        color: rgb(11, 12, 10);
+    }
+
+    .card{
+        margin-left: 30px;
+        transition: all 0.3s;
+        box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    }
+
+    .card:hover{
+        transform: scale(1.10);
+    }
+
+    .discount{
+        margin-top: 100px;
+    }
+
+    .card-content h1{
+        font-size: 70px;
+        font-weight: bold;
+    }
+
+    .card-content h2{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    .card-content h3{
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .card-content p{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .discount h1{
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .discount-card img{
+        transition: all 0.3s;
+        box-shadow: 2px 2px 5px solid rgb(240, 6, 6);
+        width: 500px;
+        height: 80vh;
+    }
+
+    .discount-card img:hover{
+        transform: 1.15;
+    }
+
+    .discount p{
+        margin-left: 10px;
+    }
+
+    .reveal{
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 1s ease;
+    }
+
+    .reveal.active{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    .dropdown button{
+        display: inline-block;
+        font-size: 15px;
+        margin-left: 50px;
+        letter-spacing: 5px;
+        color: rgb(255, 255, 0);
+        font-family: 'Kanit', sans-serif;
+    }
+
+    .banner{
+        width: 100%;
+        height: 70vh;
+        background-image: url('/pictures/9.jpg');
+        background-size: cover;
+        background-position: 69%;
+        border-radius: 10px;
+    }
+
+    .banner h1{
+        font-size: 70px;
+        color: white;
+        font-weight: bold;
+        padding-top: 15px;
+        margin-left: 5px;
+        text-shadow: 1px 2px 5px black;
+    }
+
+    .change-content:after{
+        content: '';
+        animation: changetext 10s infinite linear;
+        color: yellow;
+    }
+
+    @keyframes changetext{
+        0%{content: "CLASSIC BURGER"}
+        20%{content: "OVERLOAD BURGER"}
+        60%{content: "CLASSIC ONION BURGER"}
+        80%{content: "BLACK BURGER BURGER"}
+        100%{content: "CHICKEN BURGER"}
+    }
+
+    .banner h2{
+        font-size: 20px;
+        color: yellow;
+        font-weight: bold;
+        padding-top: 15px;
+        margin-left: 5px;
+    }
+
+    #btn2 button{
+        width: 100px;
+        height: 50px;
+        margin-left: 15px;
+        margin-top: 13px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        background-color: yellow;
+        border: none;
+        transition: 0.3 ease;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    
+    #btn2 button:hover{
+        background-color: yellow;
+        box-shadow:  0px 0px 20px yellow,
+                     0 0 20px yellow,
+                     0 0 60px yellow,
+                     0 0 150px yellow;
+    }
+
+    #btn1{
+        text-align: center;
+    }
+
+    #btn1 button{
+        width: 150px;
+        height: 30px;
+        letter-spacing: 3px;
+        font-weight: bold;
+        border: none;
+        background-color: yellow;
+        transition: 0.20s ease-in;
+        cursor: pointer;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    #btn1 button:hover{
+        background-color: black;
+        color: white;
+    }
+
+    .banner2{
+        width: 100%;
+        height: 70vh;
+        background-image: url(/pictures/10.jpg);
+        background-size: cover;
+        background-position: 50%;
+        margin-top: 50px;
+    }
+
+    .banner2 h1{
+        font-weight: bold;
+        font-size: 100px;
+        color: rgb(251, 255, 0);
+        padding-top: 100px;
+        display: inline-block;
+        font-family: 'Bangers', cursive;
+        letter-spacing: 10px;
+    }
+    
+    .container1{
+        margin-top: 10%;
+    }
+
+    .about-us{
+        margin-top: 50px;
+    }
+
+    
+   .footer1{
+    width: 100vw;
+    background: black;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+   }
+
+   .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+   }
+
+   .footer-content h3{
+    margin-top: 10px;
+    color: yellow;
+    font-family: 'Bangers', cursive;
+    font-size: 60px;
+    font-weight: 100;
+    text-transform: capitalize;
+    line-height: 3rem;
+   }
+
+   .footer-content p{
+    font-family: 'Roboto Mono', monospace;
+    max-width: 500px;
+    line-height: 30px;
+    font-weight: 100px;
+   }
+
+   .socials{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+   }
+
+   .socials li{
+    margin: 10px;
+   }
+
+   .socials a{
+    text-decoration: none;
+    color: white;
+   }
+
+   .socials a:hover{
+    color: aqua;
+   }
+
+   .footer-content p{
+    color: white;
+   }
+   
+   .text-center{
+    color: rgb(161, 161, 50);
+    font-family: 'Bangers', cursive;
+    letter-spacing: 3px;
+    font-size: 50px;
+   }
